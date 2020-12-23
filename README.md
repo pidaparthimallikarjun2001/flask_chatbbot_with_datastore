@@ -1,4 +1,4 @@
-# flask_chatbbot_with_datastore
+# flask_chatbbot_with_datastore(WITH EDIT AND DELETE MESSAGES FEATURE)LINKED WITH SQLITE DATABASE(EVEN AFTER REFRESHING THE PAGE, THE DATA IS RETAINED)
 
 # OBJECTIVE
 To build a simple and basic chatbot with Flask and python to store messages in the database(sqlite). WE CAN EDIT AND DELETE MESSAGES AS WELL
@@ -15,7 +15,7 @@ USE THIS LINK: https://flask-app-with-data-store.herokuapp.com/chats
 
 
 # YOUTUBE LINK
-USE THIS LINK: 
+USE THIS LINK: https://www.youtube.com/watch?v=GHRirH8eNDg
 
 # HOW I DID IT AND WHAT I LEARNT
 I really learnt a lot and enjoyed a lot while building this chatbot. I began to think in a broad way! I learnt how  to use Flask, python etc., I built this using DRY Principle i.e., DO NOT REPEAT YOURSELF Principle. I reused the existing components and built this. This journey has been very fun and exciting!!! Moreover, I developed self-learning!
