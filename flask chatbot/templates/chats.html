@@ -1,0 +1,39 @@
+{% extends 'base.html' %} 
+
+{% block head %}
+<title>Chats</title>
+{% endblock %} 
+
+{% block body %}
+<h1 style="text-align: center;">All Chats(You can edit and delete chats as well)</h1>
+<h2 style = "text-align: center;">Some instructions to use the chatbot:</h2>
+<h3><i>This chatbot performs only limited set of activities as for now. You can start your conversation with "hello", further you can ask it the following things: "who are you?", "what can you do?", "tell me a quote", "health tips" etc.,</i></h3>
+<div>
+{% for chat in chats %}
+    {% if chat.id %2 == 0 %}
+    <span id = "botreply">BOT: {{ chat.content }} <br>
+        <a href = "/chats/edit/{{ chat.id }}">EDIT</a> | 
+        <a href = "/chats/delete/{{ chat.id }}">DELETE</a></span><br><br>
+    
+    {%else%}
+    <span id = "userinput">YOU: {{ chat.content }} <br>
+        <a href = "/chats/edit/{{ chat.id }}">EDIT</a> | 
+        <a href = "/chats/delete/{{ chat.id }}">DELETE</a></span><br><br>
+    
+    {%endif%}
+{% endfor %}
+</div>
+
+<div class = "input">
+    <br>
+    <form action = '/chats' method = 'POST'>
+
+        <input class = "inputfield" placeholder="  Type your message here..." type = "text" name = 'content' id = 'content' autocomplete="off">
+
+        <input class = "sendbutton" type = "submit" value = "SEND">
+
+    </form>
+
+</div>
+
+{%endblock %}

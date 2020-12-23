@@ -1,0 +1,41 @@
+body {
+    font-family: Helvetica !important;
+}
+div {
+    text-align: center;
+}
+#botreply {
+ 
+    display: inline-block;
+    padding: 25px;
+    background-color: lightgray;
+    margin-right: 400px;
+    
+}
+#userinput {
+   
+    display: inline-block;
+    padding: 25px;
+    background-color: greenyellow;
+    margin-left: 400px;
+    
+}
+.inputfield {
+    outline: none;
+    height: 40px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+.sendbutton {
+    cursor: pointer;
+}
+.input {
+    margin-top: 30px;
+    text-align: center !important;
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom:50px;;
+    z-index: 0;
+}
+
